@@ -1,4 +1,5 @@
-
+#Jekyll
+_site/
 
 *.DS_Store
 .AppleDouble
