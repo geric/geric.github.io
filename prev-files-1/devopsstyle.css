@@ -1,0 +1,20 @@
+p {
+	margin:0;
+}
+
+div {
+    padding:20px 0;
+    width:100%;
+    /*background:#EEEEEE;*/
+    text-align:center;
+}
+
+img {
+    border-radius:50%;
+    clear:both;
+}
+
+span {
+    display:inline-block;
+    margin:0 20px;
+}
