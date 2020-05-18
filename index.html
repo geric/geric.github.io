@@ -1,14 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>onetapdev</title>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="description" content="One Tap Dev">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Comment the tag below to disable mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <title>One Tap Dev</title>
 </head>
 
 <body>
-    <div>
-        onetapdev 
-    </div>
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+    <main>
+        <div class="landing">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-md-5 col-lg-7 d-flex align-items-center">
+                        <div>
+                            <div class="h1 mb-0 font-weight-bold">
+                                <span class="text-orange">oneTapDev</span><span class="text-pale-blue">();</span>
+                            </div>
+                            <div class="h5 font-weight-bold">
+                                <span class="text-pale-yellow">weDo</span><span class="text-pale-blue"> = [</span><span class="text-neon-green">"design"</span><span class="text-pale-blue">, </span><span class="text-neon-green">"code"</span><span class="text-pale-blue">];</span>
+                            </div>
+
+                            <div class="h5 my-5 font-weight-bold">
+                                <p class="mb-1 text-pale-lavender">// We are full stack!</p>
+                                <p class="mb-1">
+                                    <span class="text-pink">#import </span><span class="text-silver">BackEnd.Developer</span>
+                                </p>
+                                <p class="mb-1">
+                                    <span class="text-pink">#import </span><span class="text-silver">FrontEnd.Developer</span>
+                                </p>
+                                <p class="mb-1">
+                                    <span class="text-pink">#import </span><span class="text-silver">iOS.Developer</span>
+                                </p>
+                                <p class="mb-1">
+                                    <span class="text-pink">#import </span><span class="text-silver">Android.Developer</span>
+                                </p>
+                                <p class="mb-1">
+                                    <span class="text-pink">#import </span><span class="text-silver">UI_UX.Designer</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-5 pt-md-5">
+                        <div class="bg-space-blue h-100">
+                            <div class="row">
+                                <div class="col-md-12 d-flex justify-content-start mt-2 ml-3">
+                                    <div class="window-button bg-red"></div>
+                                    <div class="window-button bg-amber"></div>
+                                    <div class="window-button bg-olive-green"></div>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-12 p-3 d-flex justify-content-start">
+                                    <div class="px-3" id="lines"></div>
+                                    <div class="pr-4" style="flex:1">
+                                        <p class="text-pale-lavender font-weight-bold mb-0" id="pendingInquiry">
+                                            /*<br />
+                                            Tap us for your project<br />
+                                            by submitting an e-mail<br />
+                                            */
+                                        </p>
+                                        <p class="text-neon-green font-weight-bold mb-0 d-none" id="inquirySubmitted">
+                                            /*<br />
+                                            <!-- {this.state.message}<br /> -->
+                                            */
+                                        </p>
+
+                                        <form id="inquiryForm" action="" method="post" onsubmit="return false">
+                                            <div class="form-group mb-3">
+                                                <label for="name"
+                                                    class="text-green font-weight-bold mb-0">//Name</label>
+                                                <input id="name" type="text" placeholder="~ Your name here"
+                                                    class="form-control no-outline bg-night-blue text-neon-green font-weight-bold border-night-blue" required/>
+                                                <span class="text-danger font-weight-bold small d-none"></span>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <label for="email"
+                                                    class="text-green font-weight-bold mb-0">//E-mail Address</label>
+                                                <input id="email" type="email" placeholder="~ Your e-mail here"
+                                                    class="form-control no-outline bg-night-blue text-neon-green font-weight-bold border-night-blue" required/>
+                                                <span class="text-danger font-weight-bold small d-none"></span>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <label for="subject"
+                                                    class="text-green font-weight-bold mb-0">//Subject</label>
+                                                <input id="subject" type="text"
+                                                    placeholder="~ Input your e-mail subject here"
+                                                    class="form-control no-outline bg-night-blue text-neon-green font-weight-bold border-night-blue" required/>
+                                                <span class="text-danger font-weight-bold small d-none"></span>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <label for="message"
+                                                    class="text-green font-weight-bold mb-0">//Message</label>
+                                                <textarea id="message" rows="4" placeholder="~ Input your message here"
+                                                    class="form-control no-outline bg-night-blue text-neon-green font-weight-bold border-night-blue" required></textarea>
+                                                <span class="text-danger font-weight-bold small d-none"></span>
+                                            </div>
+
+                                            <div class="form-group pt-3 d-flex">
+                                                <button type="submit" class="btn btn-sm btn-warning text-dark text-uppercase font-weight-bold px-4 rounded-custom ml-auto" onclick="submitInquiry()" >Send</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+<script type="text/javascript" src="index.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 </html>

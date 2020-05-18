@@ -1,0 +1,206 @@
+/* Menlo-regular */
+@font-face {
+    font-family: "Menlo";
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Menlo Regular"), local("Menlo-Regular"), url("assets/fonts/Menlo/Menlo-Regular.ttf") format("truetype");
+}
+
+/* Menlo-italic */
+@font-face {
+    font-family: "Menlo";
+    font-display: swap;
+    font-style: italic;
+    font-weight: 400;
+    src: local("Menlo Italic"), local("Menlo-Italic"), url("assets/fonts/Menlo/Menlo-Italic.ttf") format("truetype");
+}
+
+/* Menlo-700 */
+@font-face {
+	font-family: "Menlo";
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+  	src: local("Menlo Bold"), local("Menlo-Bold"),
+    	url("../../fonts/Menlo/Menlo-Bold.ttf") format("truetype");
+}
+
+/* Menlo-700italic */
+@font-face {
+	font-family: "Menlo";
+	font-display: swap;
+	font-style: italic;
+	font-weight: 700;
+  	src: local("Menlo Bold Italic"), local("Menlo-BoldItalic"),
+    	url("../../fonts/Menlo/Menlo-BoldItalic.ttf") format("truetype");
+}
+
+body {
+    font-family: "Menlo" !important;
+
+    --dark-blue: #292f4e;
+    --space-blue: #292c3d;
+    --night-blue: #2d3043;
+    --evening-blue: #373a4f;
+    --pale-blue: #6da1b7;
+    --silver: #95a5af;
+    --pale-lavender: #6e7394;
+    --pink: #d664cd;
+    --red: #ff605e;
+    --orange: #d67364;
+    --amber: #ffbb4e;
+    --pale-yellow: #d9c47f;
+    --neon-green: #8bd664;
+    --green: #5f8e46;
+    --olive-green: #00c958;
+}
+
+.landing {
+    background-color: var(--dark-blue, black) !important;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.window-button {
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue) !important;
+}
+.bg-space-blue {
+    background-color: var(--space-blue) !important;
+}
+.bg-night-blue {
+    background-color: var(--night-blue) !important;
+}
+.bg-pale-blue {
+    background-color: var(--pale-blue) !important;
+}
+.bg-silver {
+    background-color: var(--silver) !important;
+}
+.bg-pale-lavender {
+    background-color: var(--pale-lavender) !important;
+}
+.bg-pink {
+    background-color: var(--pink) !important;
+}
+.bg-red {
+    background-color: var(--red) !important;
+}
+.bg-orange {
+    background-color: var(--orange) !important;
+}
+.bg-amber {
+    background-color: var(--amber) !important;
+}
+.bg-pale-yellow {
+    background-color: var(--pale-yellow) !important;
+}
+.bg-neon-green {
+    background-color: var(--neon-green) !important;
+}
+.bg-green {
+    background-color: var(--green) !important;
+}
+.bg-olive-green {
+    background-color: var(--olive-green) !important;
+}
+.border-dark-blue {
+    border-color: var(--dark-blue) !important;
+}
+.border-space-blue {
+    border-color: var(--space-blue) !important;
+}
+.border-night-blue {
+    border-color: var(--night-blue) !important;
+}
+.border-pale-blue {
+    border-color: var(--pale-blue) !important;
+}
+.border-silver {
+    border-color: var(--silver) !important;
+}
+.border-pale-lavender {
+    border-color: var(--pale-lavender) !important;
+}
+.border-pink {
+    border-color: var(--pink) !important;
+}
+.border-red {
+    border-color: var(--red) !important;
+}
+.border-orange {
+    border-color: var(--orange) !important;
+}
+.border-amber {
+    border-color: var(--amber) !important;
+}
+.border-pale-yellow {
+    border-color: var(--pale-yellow) !important;
+}
+.border-neon-green {
+    border-color: var(--neon-green) !important;
+}
+.border-green {
+    border-color: var(--green) !important;
+}
+.border-olive-green {
+    border-color: var(--olive-green) !important;
+}
+.rounded-custom {
+    border-radius: 30px;
+}
+.text-dark-blue {
+    color: var(--dark-blue) !important;
+}
+.text-space-blue {
+    color: var(--space-blue) !important;
+}
+.text-night-blue {
+    color: var(--night-blue) !important;
+}
+.text-evening-blue {
+    color: var(--evening-blue) !important;
+}
+.text-pale-blue {
+    color: var(--pale-blue) !important;
+}
+.text-silver {
+    color: var(--silver) !important;
+}
+.text-pale-lavender {
+    color: var(--pale-lavender) !important;
+}
+.text-pink {
+    color: var(--pink) !important;
+}
+.text-red {
+    color: var(--red) !important;
+}
+.text-orange {
+    color: var(--orange) !important;
+}
+.text-amber {
+    color: var(--amber) !important;
+}
+.text-pale-yellow {
+    color: var(--pale-yellow) !important;
+}
+.text-neon-green,
+.text-neon-green::-webkit-input-placeholder, 
+/* .text-neon-green:-ms-input-placeholder, */
+.text-neon-green::placeholder {
+    color: var(--neon-green) !important;
+}
+.text-green {
+    color: var(--green) !important;
+}
+.text-olive-green {
+    color: var(--olive-green) !important;
+}
