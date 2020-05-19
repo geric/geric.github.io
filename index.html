@@ -38,25 +38,32 @@
                                 <span class="text-orange">oneTapDev</span><span class="text-pale-blue">();</span>
                             </div>
                             <div class="h5 font-weight-bold">
-                                <span class="text-pale-yellow">weDo</span><span class="text-pale-blue"> = [</span><span class="text-neon-green">"design"</span><span class="text-pale-blue">, </span><span class="text-neon-green">"code"</span><span class="text-pale-blue">];</span>
+                                <span class="text-pale-yellow">weDo</span><span class="text-pale-blue"> = [</span><span
+                                    class="text-neon-green">"design"</span><span class="text-pale-blue">, </span><span
+                                    class="text-neon-green">"code"</span><span class="text-pale-blue">];</span>
                             </div>
 
                             <div class="h5 my-5 font-weight-bold">
                                 <p class="mb-1 text-pale-lavender">// We are full stack!</p>
                                 <p class="mb-1">
-                                    <span class="text-pink">#import </span><span class="text-silver">BackEnd.Developer</span>
+                                    <span class="text-pink">#import </span><span
+                                        class="text-silver">BackEnd.Developer</span>
                                 </p>
                                 <p class="mb-1">
-                                    <span class="text-pink">#import </span><span class="text-silver">FrontEnd.Developer</span>
+                                    <span class="text-pink">#import </span><span
+                                        class="text-silver">FrontEnd.Developer</span>
                                 </p>
                                 <p class="mb-1">
-                                    <span class="text-pink">#import </span><span class="text-silver">iOS.Developer</span>
+                                    <span class="text-pink">#import </span><span
+                                        class="text-silver">iOS.Developer</span>
                                 </p>
                                 <p class="mb-1">
-                                    <span class="text-pink">#import </span><span class="text-silver">Android.Developer</span>
+                                    <span class="text-pink">#import </span><span
+                                        class="text-silver">Android.Developer</span>
                                 </p>
                                 <p class="mb-1">
-                                    <span class="text-pink">#import </span><span class="text-silver">UI_UX.Designer</span>
+                                    <span class="text-pink">#import </span><span
+                                        class="text-silver">UI_UX.Designer</span>
                                 </p>
                             </div>
                         </div>
@@ -74,32 +81,51 @@
                                 <div class="col-md-12 p-3 d-flex justify-content-start">
                                     <div class="px-3" id="lines"></div>
                                     <div class="pr-4" style="flex:1">
+
                                         <p class="text-pale-lavender font-weight-bold mb-0" id="pendingInquiry">
-                                            /*<br />
-                                            Tap us for your project<br />
-                                            by submitting an e-mail<br />
-                                            */
+                                            <br />/* About us */
                                         </p>
-                                        <p class="text-neon-green font-weight-bold mb-0 d-none" id="inquirySubmitted">
-                                            /*<br />
-                                            <!-- {this.state.message}<br /> -->
-                                            */
+                                        <p class="text-orange mb-0">
+                                            Based in Manila, Philippines, OneTapDev aims to help you build your project.
+                                            We've built sites and applications for a large number of clients.
                                         </p>
 
-                                        <form id="inquiryForm" action="" method="post" onsubmit="return false">
+                                        <p class="text-pale-lavender font-weight-bold mb-0" id="pendingInquiry">
+                                            <br />/* Services */
+                                        </p>
+
+                                        <p class="text-neon-green font-weight-bold border-night-blue mb-0">
+                                            <br />> Consulting
+                                            <br />> Web Application Development
+                                            <br />> Mobile Application Development
+                                            <br />> Graphic Design
+                                            <br />> Rapid Prototyping
+                                        </p>
+
+                                        <p class="text-pale-lavender font-weight-bold mb-0" id="pendingInquiry">
+                                            <br />/* We're just one tap away! */
+                                        </p>
+
+                                        <span
+                                            class="bg-night-blue text-neon-green font-weight-bold border-night-blue">onetapsales@gmail.com</span><span
+                                            class="text-pale-blue"></span>
+
+
+                                        <!-- <form id="inquiryForm" action="" method="post" onsubmit="return false">
                                             <div class="form-group mb-3">
-                                                <label for="name"
-                                                    class="text-green font-weight-bold mb-0">//Name</label>
+
+                                                                                                    
                                                 <input id="name" type="text" placeholder="~ Your name here"
                                                     class="form-control no-outline bg-night-blue text-neon-green font-weight-bold border-night-blue" required/>
                                                 <span class="text-danger font-weight-bold small d-none"></span>
                                             </div>
 
                                             <div class="form-group mb-3">
-                                                <label for="email"
-                                                    class="text-green font-weight-bold mb-0">//E-mail Address</label>
+                                                <label for="email" class="text-green font-weight-bold mb-0">//E-mail
+                                                    Address</label>
                                                 <input id="email" type="email" placeholder="~ Your e-mail here"
-                                                    class="form-control no-outline bg-night-blue text-neon-green font-weight-bold border-night-blue" required/>
+                                                    class="form-control no-outline bg-night-blue text-neon-green font-weight-bold border-night-blue"
+                                                    required />
                                                 <span class="text-danger font-weight-bold small d-none"></span>
                                             </div>
 
@@ -108,7 +134,8 @@
                                                     class="text-green font-weight-bold mb-0">//Subject</label>
                                                 <input id="subject" type="text"
                                                     placeholder="~ Input your e-mail subject here"
-                                                    class="form-control no-outline bg-night-blue text-neon-green font-weight-bold border-night-blue" required/>
+                                                    class="form-control no-outline bg-night-blue text-neon-green font-weight-bold border-night-blue"
+                                                    required />
                                                 <span class="text-danger font-weight-bold small d-none"></span>
                                             </div>
 
@@ -116,14 +143,18 @@
                                                 <label for="message"
                                                     class="text-green font-weight-bold mb-0">//Message</label>
                                                 <textarea id="message" rows="4" placeholder="~ Input your message here"
-                                                    class="form-control no-outline bg-night-blue text-neon-green font-weight-bold border-night-blue" required></textarea>
+                                                    class="form-control no-outline bg-night-blue text-neon-green font-weight-bold border-night-blue"
+                                                    required></textarea>
                                                 <span class="text-danger font-weight-bold small d-none"></span>
                                             </div>
 
                                             <div class="form-group pt-3 d-flex">
-                                                <button type="submit" class="btn btn-sm btn-warning text-dark text-uppercase font-weight-bold px-4 rounded-custom ml-auto" onclick="submitInquiry()" >Send</button>
+                                                <button type="submit"
+                                                    class="btn btn-sm btn-warning text-dark text-uppercase font-weight-bold px-4 rounded-custom ml-auto"
+                                                    onclick="submitInquiry()">Send</button>
                                             </div>
-                                        </form>
+                                        </form> -->
+
                                     </div>
                                 </div>
                             </div>
