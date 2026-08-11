@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://geric.github.io/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://geric.github.io/posts/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://geric.github.io/posts/why-i-moved-this-site-to-hugo/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://geric.github.io/posts/ai-assisted-development-2-weeks-to-3-days/</loc>
+    <lastmod>2026-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://geric.github.io/posts/erc-4626-vaults-for-real-world-assets/</loc>
+    <lastmod>2026-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://geric.github.io/about/</loc>
+  </url><url>
+    <loc>https://geric.github.io/categories/</loc>
+  </url><url>
+    <loc>https://geric.github.io/contact/</loc>
+  </url><url>
+    <loc>https://geric.github.io/portfolio/</loc>
+  </url><url>
+    <loc>https://geric.github.io/search/</loc>
+  </url><url>
+    <loc>https://geric.github.io/tags/</loc>
+  </url>
+</urlset>

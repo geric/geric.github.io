@@ -1,0 +1,23 @@
+{
+  "name": "geric.github.io",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  "forwardPorts": [8080],
+
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "upgradePackages": true
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "anthropic.claude-code"
+      ]
+    }
+  }
+}

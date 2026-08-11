@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://geric.github.io/sitemap.xml

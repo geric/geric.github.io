@@ -1,23 +1,30 @@
-# :wave: Hello!
+# geric.github.io
 
-> Any fool can write code that a computer can understand. Good programmers write code that humans can understand.  
-> – _Martin Fowler_
+Personal site — resume, portfolio, blog, contact. Built with [Hugo](https://gohugo.io/) and the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
 
-## Who am I?
+Built locally and published from the `docs/` folder — no CI, no build step on GitHub's end.
 
-I'm a software engineer based in the Philippines 🇵🇭
+## Structure
 
-## What I do
+- `content/` — pages (`about.md`, `portfolio.md`, `contact.md`) and blog posts (`content/posts/`)
+- `themes/PaperMod/` — theme, vendored as a git submodule
+- `hugo.toml` — site config
+- `docs/` — build output, served by GitHub Pages
 
-- Lead teams to meet project requirements and deadlines.
-- Help stakeholders understand the technical aspect of the project and make key business decisions. (_Who do we hire? How many engineers do we need? Is the project doable in the given time frame? How soon can we launch?_)
-- Design a project from the ground up.
-- Write backend code and sometimes QA automation test scripts (gotta have them tests :wink:).
-- Perform code reviews, daily stand-ups, sprint planning.
-- Reduce Infrastructure cost by keeping things simple. (_Do you really need all those servers doing microservice with over the top engineering complexity just to service a User base of less than a 1,000?_)
-- Write and Audit Smart Contracts.
+## Workflow
 
-## What brought you here?
+```sh
+# first time / after pulling
+git submodule update --init --recursive
 
-Do you have something in mind?  
-[Contact me!](/profile/contact.md) I'm a real person, at least I think I am :robot:
+# preview locally
+hugo server -D
+
+# build and publish
+hugo
+git add -A
+git commit -m "..."
+git push
+```
+
+GitHub Pages is configured to serve from the `docs/` folder on `master`.
