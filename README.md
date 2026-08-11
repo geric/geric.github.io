@@ -11,20 +11,35 @@ Built locally and published from the `docs/` folder — no CI, no build step on 
 - `hugo.toml` — site config
 - `docs/` — build output, served by GitHub Pages
 
-## Workflow
+## First time / after pulling
 
 ```sh
-# first time / after pulling
 git submodule update --init --recursive
+```
 
-# preview locally
+## Adding a new blog post
+
+```sh
+hugo new posts/my-new-post.md
+```
+
+Edit `content/posts/my-new-post.md` (markdown, front matter already filled in). It's created with `draft: true` — remove that line or set it to `false` before publishing, otherwise it's excluded from the production build.
+
+## Preview locally
+
+```sh
 hugo server -D
+```
 
-# build and publish
+Open `http://localhost:8080/` (devcontainer forwards the port automatically). `-D` includes drafts. Live-reloads on save. Ctrl+C to stop.
+
+## Publish
+
+```sh
 hugo
 git add -A
 git commit -m "..."
 git push
 ```
 
-GitHub Pages is configured to serve from the `docs/` folder on `master`.
+`hugo` (no `-D`) rebuilds `docs/`, excluding drafts. GitHub Pages serves `docs/` on `master` automatically — no CI to configure, GitHub's own Pages workflow picks it up on push.
