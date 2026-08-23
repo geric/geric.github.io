@@ -28,18 +28,20 @@ Edit `content/posts/my-new-post.md` (markdown, front matter already filled in). 
 ## Preview locally
 
 ```sh
-hugo server -D
+hugo server -D --port 8080
 ```
 
 Open `http://localhost:8080/` (devcontainer forwards the port automatically). `-D` includes drafts. Live-reloads on save. Ctrl+C to stop.
 
+**Warning:** `hugo server` writes its dev-mode build (including a livereload script that tries to connect back to `localhost`) directly into `docs/`, the same folder GitHub Pages serves. Never commit right after running the server — always do a clean production build first (see Publish below), or the live site ends up shipping a broken script that tries to reach your laptop.
+
 ## Publish
 
 ```sh
-hugo
+hugo --gc --minify
 git add -A
 git commit -m "..."
 git push
 ```
 
-`hugo` (no `-D`) rebuilds `docs/`, excluding drafts. GitHub Pages serves `docs/` on `master` automatically — no CI to configure, GitHub's own Pages workflow picks it up on push.
+`hugo --gc --minify` (no `-D`) rebuilds `docs/` as a clean production build, excluding drafts and overwriting any leftover dev-mode output from `hugo server`. GitHub Pages serves `docs/` on `master` automatically — no CI to configure, GitHub's own Pages workflow picks it up on push.
