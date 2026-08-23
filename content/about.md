@@ -1,6 +1,7 @@
 ---
 title: "About"
 url: "/about/"
+date: 2026-08-11
 ShowReadingTime: false
 ShowWordCount: false
 ---

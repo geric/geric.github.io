@@ -12,3 +12,7 @@ Rolling out AI-assisted development across a 9-person cross-functional team wasn
 **Review discipline had to go up, not down.** Faster output raises the cost of a bad review. We kept the same code review bar and, if anything, got stricter about it for AI-assisted PRs — the failure mode isn't "the code doesn't compile," it's "the code compiles and looks plausible but is subtly wrong," which is a harder thing to catch on autopilot.
 
 The 2-weeks-to-3-days number is real, but it's a team-level outcome, not a tooling benchmark — it came from treating the model as a fast first-draft generator inside a review process we didn't loosen, not from trusting it to make decisions.
+
+---
+
+Rolling out AI-assisted development on your own team and want a second opinion on where it'll actually pay off? [Get in touch](/contact/).

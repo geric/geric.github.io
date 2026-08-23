@@ -1,6 +1,6 @@
 baseURL = "https://geric.github.io/"
 locale = "en-us"
-title = "Geric Encarnacion"
+title = "Geric"
 theme = "PaperMod"
 publishDir = "docs"
 
@@ -13,6 +13,11 @@ pygmentsUseClasses = true
 
 [params]
   env = "production"
+
+  [params.assets]
+    favicon = "favicon.svg"
+    favicon16x16 = "favicon.svg"
+    favicon32x32 = "favicon.svg"
   description = "Geric Encarnacion — Technology Lead. Backend architecture, engineering strategy, and RWA tokenization."
   author = "Geric Encarnacion"
   defaultTheme = "auto"
@@ -29,6 +34,9 @@ pygmentsUseClasses = true
   [params.homeInfoParams]
     Title = "Hi, I'm Geric \U0001F44B"
     Content = "Technology Lead — backend architecture, engineering strategy, and RWA tokenization. 12+ years across fintech, govtech, and DeFi."
+
+  [params.schema]
+    publisherType = "Person"
 
   [[params.socialIcons]]
     name = "email"

@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Geric Encarnacion</title>
-    <link>https://geric.github.io/posts/</link>
-    <description>Recent content in Posts on Geric Encarnacion</description>
+    <title>Posts on Geric</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Geric</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://geric.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why I moved this site off Docsify and onto Hugo</title>
-      <link>https://geric.github.io/posts/why-i-moved-this-site-to-hugo/</link>
+      <link>http://localhost:1313/posts/why-i-moved-this-site-to-hugo/</link>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://geric.github.io/posts/why-i-moved-this-site-to-hugo/</guid>
+      <guid>http://localhost:1313/posts/why-i-moved-this-site-to-hugo/</guid>
       <description>&lt;p&gt;This site used to run on Docsify — markdown rendered client-side by JS, no build step. Fine for a quick personal page, bad for anything you want search engines to actually read: crawlers that don&amp;rsquo;t execute JS see an empty shell, and there&amp;rsquo;s no per-page metadata to speak of.&lt;/p&gt;
 &lt;p&gt;I wanted something boring instead: static HTML generated at build time, no framework churn, no dependency on a CDN script staying online. Hugo fit — a single binary, no Ruby/Node toolchain to maintain, markdown in, HTML out. I build locally and push the output straight to &lt;code&gt;/docs&lt;/code&gt;; no CI pipeline to babysit.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cutting feature delivery from two weeks to three days with AI-assisted development</title>
-      <link>https://geric.github.io/posts/ai-assisted-development-2-weeks-to-3-days/</link>
+      <link>http://localhost:1313/posts/ai-assisted-development-2-weeks-to-3-days/</link>
       <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://geric.github.io/posts/ai-assisted-development-2-weeks-to-3-days/</guid>
+      <guid>http://localhost:1313/posts/ai-assisted-development-2-weeks-to-3-days/</guid>
       <description>&lt;p&gt;Rolling out AI-assisted development across a 9-person cross-functional team wasn&amp;rsquo;t about handing everyone a Copilot license and calling it done — most of the gain came from where in the workflow we applied it.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Scaffolding, not judgment.&lt;/strong&gt; The time savings showed up in boilerplate-heavy work — API endpoint scaffolding, migration files, repetitive test setup, translating a spec into a first-pass implementation. Architecture decisions, service boundaries, and anything touching regulatory logic stayed human-reviewed line by line. The tool is fast at typing; it&amp;rsquo;s not accountable for a compliance requirement being met.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ERC-4626 vaults for RWA: what changes when the collateral isn&#39;t crypto</title>
-      <link>https://geric.github.io/posts/erc-4626-vaults-for-real-world-assets/</link>
+      <link>http://localhost:1313/posts/erc-4626-vaults-for-real-world-assets/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://geric.github.io/posts/erc-4626-vaults-for-real-world-assets/</guid>
+      <guid>http://localhost:1313/posts/erc-4626-vaults-for-real-world-assets/</guid>
       <description>&lt;p&gt;ERC-4626 was designed for yield-bearing crypto vaults — deposit an ERC-20, get shares, redeem later at a different exchange rate. The mechanics translate reasonably well to tokenized real-world assets, but a few assumptions in the standard stop holding once the underlying isn&amp;rsquo;t sitting on-chain.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Redemption isn&amp;rsquo;t instant.&lt;/strong&gt; A crypto vault can settle a withdrawal in the same block. An RWA vault backed by a bond or a fund unit is gated by the actual settlement cycle of that asset — T+2, a subscription/redemption window, sometimes a manual custodian step. &lt;code&gt;previewRedeem&lt;/code&gt; and &lt;code&gt;maxWithdraw&lt;/code&gt; need to reflect that reality rather than assume liquidity is always there, or integrators will build against numbers the vault can&amp;rsquo;t honor.&lt;/p&gt;</description>
     </item>

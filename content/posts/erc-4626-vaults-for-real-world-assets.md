@@ -12,3 +12,7 @@ ERC-4626 was designed for yield-bearing crypto vaults — deposit an ERC-20, get
 **Compliance sits in the transfer path, not around it.** Investor eligibility (accredited status, jurisdiction, KYC/KYB) has to be enforced at transfer time, which usually means wrapping `transfer`/`transferFrom` with a compliance check rather than treating the token as a bare ERC-20. ERC-7540 (async deposit/redeem extensions to 4626) helps model the delayed-settlement piece, but the compliance layer is still something you build on top, not something either standard gives you.
 
 None of this is a reason to avoid 4626 for tokenized assets — it's still the right shape for the share/asset accounting. It's just not a drop-in; the parts that assume instant, code-only settlement are exactly the parts that need to be replaced with something that reflects how the underlying asset actually settles.
+
+---
+
+Advising a team on RWA vault architecture or MAS-compliant tokenization design? [Get in touch](/contact/).
